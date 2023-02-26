@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 <header class="page-header">
@@ -57,7 +58,8 @@
       </li>
       <li class="breadcrumbs-item">
         <img class="home" alt="на главную" src="./images/home.svg" width="12" height="12">
-        <a class="breadcrumbs-link">Гостиницы</a>
+        <img class="arrow" alt="стрелка" src="./images/arrow.svg" width="6" height="10">
+        <a class="breadcrumbs-link-hotels">Гостиницы</a>
       </li>
     </ul>
   <section class="catalog-products">
@@ -109,7 +111,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button" type="submit">Показать</button>
+      <button class="button" type="submit">Применить</button>
       <button class="button" type="submit">Сбросить</button>
     </form>
   </section>
@@ -141,8 +143,8 @@
         </a>
         <p class="product-cart-price">Гостиница</p>
         <p class="product-cart-price">от 4000 ₽</p>
-        <a class="product-cart-button button" href="#">подробнее</a>
-        <a class="product-cart-button button" href="#">в избранное</a>
+        <a class="product-cart-button-1 button" href="#">подробнее</a>
+        <a class="product-cart-button-2 button" href="#">в избранное</a>
         <div class="stars">
           <span class="stars">четыре звезды</span>
         </div>
@@ -155,8 +157,8 @@
         </a>
         <p class="product-cart-price">Гостиница</p>
         <p class="product-cart-price">от 5000 ₽</p>
-        <a class="product-cart-button button" href="#">подробнее</a>
-        <a class="product-cart-button button" href="#">в избранном</a>
+        <a class="product-cart-button-1 button" href="#">подробнее</a>
+        <a class="product-cart-button-3 button" href="#">в избранном</a>
         <div class="stars">
           <span class="stars">четыре звезды</span>
         </div>
@@ -169,8 +171,8 @@
         </a>
         <p class="product-cart-price">Гостиница</p>
         <p class="product-cart-price">от 2500 ₽</p>
-        <a class="product-cart-button button" href="#">подробнее</a>
-        <a class="product-cart-button button" href="#">в избранное</a>
+        <a class="product-cart-button-1 button" href="#">подробнее</a>
+        <a class="product-cart-button-2 button" href="#">в избранное</a>
         <div class="stars">
           <span class="stars">три звезды</span>
         </div>
@@ -183,8 +185,8 @@
         </a>
         <p class="product-cart-price">Гостиница</p>
         <p class="product-cart-price">от 1500 ₽</p>
-        <a class="product-cart-button button" href="#">подробнее</a>
-        <a class="product-cart-button button" href="#">в избранное</a>
+        <a class="product-cart-button-1 button" href="#">подробнее</a>
+        <a class="product-cart-button-2 button" href="#">в избранное</a>
         <div class="stars">
           <span class="stars">две звезды</span>
         </div>
@@ -212,11 +214,11 @@
     </li>
      </ul>
   </section>
-  <section class="newsletter">
-    <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-    <p class="page-footer-title">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="newsletter">
+  <section class="newsletter-catalog">
+    <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
+    <p class="page-footer-info-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <form class="newsletter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
+      <label class="newsletter-catalog">
       <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
       </label>
       <button class="button newsletter-button" type="submit">
@@ -250,7 +252,9 @@
     </section>
     <section class="footer-contacts">
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <img class="htmlacademy" alt="html академия" src="./images/footer/html_academy.svg" width="115" height="33">
+      </a>
     </section>
   </footer>
   </body>
