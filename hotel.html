@@ -23,27 +23,27 @@
         <a class="navigation-link" href="hotel.html">Гостиницы</a>
       </li>
     </ul>
-   <ul class="navigation-list navigation-user">
-    <li class="navigation-item">
-      <a class="navigation-link" href="#">
-        <img class="search" alt="поиск" src="./images/header/search.svg" width="20" height="20">
-        <span class="visually-hidden">
-          Поиск
-        </span>
-      </a>
-    </li>
-    <li class="navigation-item">
-      <a class="navigation-link" href="#">
-        <img class="heart" alt="сердце" src="./images/header/heart.svg" width="20" height="20">
-        <span class="visually-hidden">
-          Понравившиеся
-        </span>
-      </a>
-    </li>
-    <li class="navigation-item-want">
-      <a class="navigation-link" href="#">хочу сюда!</a>
-    </li>
-    </ul>
+    <ul class="navigation-list navigation-user">
+      <li class="navigation-user-item">
+        <a class="navigation-user-search" href="#">
+          <img class="search" alt="поиск" src="./images/header/search.svg">
+          <span class="visually-hidden">
+            Поиск
+          </span>
+        </a>
+      </li>
+      <li class="navigation-user-item">
+        <a class="navigation-user-heart" href="#">
+          <img class="heart" alt="сердце" src="./images/header/heart.svg">
+          <span class="visually-hidden">
+            Понравившиеся
+          </span>
+        </a>
+      </li>
+      <li class="navigation-item-want">
+        <a class="navigation-link-want" href="#">хочу сюда!</a>
+      </li>
+      </ul>
   </nav>
 </header>
 <main class="main-inner">
@@ -67,6 +67,7 @@
     </ul>
   </div>
   <section class="catalog-products">
+    <div class="filter-list">
     <h2 class="visually-hidden">Список фильтров</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="catalog-filter-group">
@@ -115,35 +116,42 @@
           </li>
         </ul>
       </fieldset>
-      <div class="button-filter">
-      <button class="button-filter" type="submit">Применить</button>
-      <button class="button-filter" type="submit">Сбросить</button>
-    </div>
+
+      <div class="button-filter-all">
+      <div class="button-filter-first-block">
+      <button class="button-filter-first" type="submit">Применить</button>
+      </div>
+      <button class="button-filter-second" type="submit">Сбросить</button>
+      </div>
     </form>
+  </div>
   </section>
   </header>
   <section class="sorting">
     <div class="sorting-list">
     <h3 class="found">найдено гостиниц: 38</h3>
+    <div class="catalog-sorting">
     <select class="select-control" aria-label="Сортировка">
       <option value="popular">Сначала популярные</option>
       <option value="cheap">Сначала дешёвые</option>
       <option value="expensive">Сначала дорогие</option>
     </select>
+    <div class="different-menu">
     <a class="button" href="#">
-      <img class="sorting-item" alt="карточки" src="./images/sorting/cards.svg" width="16" height="14">
+      <img class="sorting-item" alt="карточки" src="./images/sorting/cards(1).svg" width="48" height="48">
       <span class="visually-hidden">Показать карточки</span>
     </a>
     <a href="#" class="button button-light">
-      <img class="sorting-item" alt="крупные клетки" src="./images/sorting/checkered.svg" width="16" height="14">
+      <img class="sorting-item" alt="крупные клетки" src="./images/sorting/checkered(1).svg" width="48" height="48">
       <span class="visually-hidden">Крупные клетки</span>
     </a>
     <a href="#" class="button button-light">
-      <img class="sorting-item" alt="список" src="./images/sorting/list.svg" width="16" height="14">
+      <img class="sorting-item" alt="список" src="./images/sorting/list(1).svg" width="48" height="48">
       <span class="visually-hidden">Показать список</span>
     </a>
   </div>
-
+  </div>
+  </div>
     <ul class="product-list">
       <li class="product-cart">
         <a class="product-cart-link" href="#">
@@ -202,6 +210,7 @@
         <p class="rating">рейтинг: 5,0</p>
       </li>
     </ul>
+    <div class="pagination-container">
     <ul class="pagination">
     <li class="pagination-item">
       <a class="pagination-link pagination-current">1</a>
@@ -216,12 +225,13 @@
       <a class="pagination-link" href="#">4</a>
     </li>
     <li class="pagination-item">
-      <a class="pagination-link" href="#">...</a>
+      <a class="pagination-link pagination-points" href="#">...</a>
     </li>
     <li class="pagination-item">
       <a class="pagination-link" href="#">10</a>
     </li>
      </ul>
+    </div>
   </section>
   <section class="newsletter-catalog">
     <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
@@ -238,6 +248,7 @@
 </div>
 </main>
 <footer class="footer-conteiner">
+  <div class="footer-block">
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <img class="social-media" alt="вк" src="./images/footer/vk.svg" width="24" height="14">
@@ -258,14 +269,14 @@
         </a>
       </li>
     </ul>
-    <div class="footer-phone">
-    <section class="footer-contacts">
+      <div class="footer-phone">
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </div>
-      <div class="htmlacademy">
+    <div class="htmlacademy">
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
       <img class="htmlacademy" alt="html академия" src="./images/footer/html_academy.svg" width="115" height="33">
       </a>
+    </div>
     </div>
   </footer>
   </div>
